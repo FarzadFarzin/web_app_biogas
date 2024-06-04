@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title}}</title>
+    <link href="{{ url_for('static', filename='style/style.css')}}" rel="stylesheet" />
+</head>
+<body>
+    <h1>Today is {{ date}}</h1>
+    <p>Feel free to complete this paramters</p>
+    
+    <form action="/welcome">
+        
+        <label for="DS_PS_in">DS_PS_in (%):</label>
+        <input type="text" id="DS_PS_in" name="DS_PS_in" value="{{ request.form['DS_PS_in'] }}"><br>
+
+        <label for="VS_PS_in">VS_PS_in (%):</label>
+        <input type="text" id="VS_PS_in" name="VS_PS_in" value="{{ request.form['VS_PS_in'] }}"><br>
+
+        <label for="DS_WS_in">DS_WS_in (%):</label>
+        <input type="text" id="DS_WS_in" name="DS_WS_in" value="{{ request.form['DS_WS_in'] }}"><br>
+
+        <label for="VS_WS_in">VS_WS_in (%):</label>
+        <input type="text" id="VS_WS_in" name="VS_WS_in" value="{{ request.form['VS_WS_in'] }}"><br>
+
+        <label for="DS_Digester">DS_Digester (%):</label>
+        <input type="text" id="DS_Digester" name="DS_Digester" value="{{ request.form['DS_Digester'] }}"><br>
+
+        <label for="FA">FA (mg/L):</label>
+        <input type="text" id="FA" name="FA" value="{{ request.form['FA'] }}"><br>
+
+        <label for="Q_PS_Q_WS">Q_PS/Q_WS:</label>
+        <input type="text" id="Q_PS_Q_WS" name="Q_PS_Q_WS" value="{{ request.form['Q_PS_Q_WS'] }}"><br>
+
+        <label for="Q_PS_in">Q_PS_in (m³/d):</label>
+        <input type="text" id="Q_PS_in" name="Q_PS_in" value="{{ request.form['Q_PS_in'] }}"><br>
+
+        <label for="Q_WS_in">Q_WS_in (m³/d):</label>
+        <input type="text" id="Q_WS_in" name="Q_WS_in" value="{{ request.form['Q_WS_in'] }}"><br>
+
+        <label for="Q_Total">Q_Total (m³/d):</label>
+        <input type="text" id="Q_Total" name="Q_Total" value="{{ request.form['Q_Total'] }}"><br>
+
+        <button type="submit">Optimize</button>
+    </form>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
