@@ -2,23 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biogas Prediction Model</title>
-    <link href="{{ url_for('static', filename='style/style.css')}}" rel="stylesheet" />
+    <title>Biogas Model Optimization</title>
+    <link rel="stylesheet" href="/static/styles.css"> <!-- Link to the CSS file -->
 </head>
-
-
 <body>
-    <h1>Biogas Prediction Model1</h1>
+    <h1>Biogas Model Optimization</h1>
+    <form method="POST">
+        {% if error_message %}
+        <div class="error-container">
+            <p style="color: red;">{{ error_message }}</p>
+        </div>
+        {% endif %}
+        <div class="user-container">
+            <h2>Enter Initial Parameters:</h2>
+            <label for="DS_PS_in">DS_PS_in (%):</label>
+            <input type="text" id="DS_PS_in" name="DS_PS_in" value="{{ request.form['DS_PS_in'] }}"><br>
+            
+            <label for="VS_PS_in">VS_PS_in (%):</label>
+            <input type="text" id="VS_PS_in" name="VS_PS_in" value="{{ request.form['VS_PS_in'] }}"><br>
 
-    <form action="/welcome">
-        <button type="submit">Welcome to this APP</button>
+            <label for="DS_WS_in">DS_WS_in (%):</label>
+            <input type="text" id="DS_WS_in" name="DS_WS_in" value="{{ request.form['DS_WS_in'] }}"><br>
+
+            <label for="VS_WS_in">VS_WS_in (%):</label>
+            <input type="text" id="VS_WS_in" name="VS_WS_in" value="{{ request.form['VS_WS_in'] }}"><br>
+
+            <label for="DS_Digester">DS_Digester (%):</label>
+            <input type="text" id="DS_Digester" name="DS_Digester" value="{{ request.form['DS_Digester'] }}"><br>
+
+            <label for="FA">FA (mg/L):</label>
+            <input type="text" id="FA" name="FA" value="{{ request.form['FA'] }}"><br>
+
+            <label for="Q_PS_Q_WS">Q_PS/Q_WS:</label>
+            <input type="text" id="Q_PS_Q_WS" name="Q_PS_Q_WS" value="{{ request.form['Q_PS_Q_WS'] }}"><br>
+
+            <label for="Q_PS_in">Q_PS_in (m³/d):</label>
+            <input type="text" id="Q_PS_in" name="Q_PS_in" value="{{ request.form['Q_PS_in'] }}"><br>
+
+            <label for="Q_WS_in">Q_WS_in (m³/d):</label>
+            <input type="text" id="Q_WS_in" name="Q_WS_in" value="{{ request.form['Q_WS_in'] }}"><br>
+
+            <label for="Q_Total">Q_Total (m³/d):</label>
+            <input type="text" id="Q_Total" name="Q_Total" value="{{ request.form['Q_Total'] }}"><br>
+
+            <button type="submit" name="optimize">Optimize</button><br>
+            <br>
+        </div>
+        <div class="results-container">
+            <div class="section">
+                <h2>Initial Prediction of Operational Parameters:</h2>
+                <label for="pred_DS_eff">Predictied DS_eff %:</label>
+                <span> {{ pred_DS_eff }}</span><br>
+                <label for="pred_VS_eff">Predictied VS_eff %:</label>
+                <span> {{ pred_VS_eff }}</span><br>
+            </div>
+        
+            <div class="section">
+                <h3>Additional Parameters for Prediction:</h3>
+                <label for="ALK">ALK (mg CaCO3/L):</label>
+                <input type="text" id="ALK" name="ALK" value="{{ request.form['ALK'] }}">
+                <span>Optimized ALK: {{ ALK_optimized }}</span><br>
+                
+                <label for="pH">pH:</label>
+                <input type="text" id="pH" name="pH" value="{{ request.form['pH'] }}">
+                <span>Optimized pH: {{ pH_optimized }}</span><br>
+                
+                <label for="T">Temperature (°C):</label>
+                <input type="text" id="T" name="T" value="{{ request.form['T'] }}">
+                <span>Optimized Temperature: {{ T_optimized }}</span><br>
+                
+                <label for="Q_eff">Q_eff (m³/d):</label>
+                <input type="text" id="Q_eff" name="Q_eff" value="{{ request.form['Q_eff'] }}">
+                <span>Optimized Q_eff: {{ Q_eff_optimized }}</span><br>
+
+
+                <button type="submit" name="predict">Predict</button>
+            </div>
+            
+        </div>
+
+        {% if plot_url %}
+        <div class="plot-container">
+            <img src="data:image/png;base64,{{ plot_url }}" alt="Optimization Cost Plot">
+        </div>
+        {% endif %}
+
+        {% if prediction %}
+        <div class="prediction-container">
+            <h3>Today's Biogas Prediction:</h3>
+            <div class="prediction-text">{{ today }}: The biogas prediction is <strong>{{ prediction }} m³/d</strong>.</div>
+            <div class="final-value-text">Optimized Biogas Value: <strong>{{ final_value }} m³/d</strong></div>
+        </div>
+        {% endif %}
+
+
     </form>
-    
+
 </body>
 </html>
-
-
-
-
-
+</html>
+</html>
+</html>

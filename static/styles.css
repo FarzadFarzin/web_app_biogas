@@ -1,0 +1,113 @@
+/* Basic styles */
+body {
+    font-family: 'Arial', sans-serif;  /* Updated font choice */
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #f4f4f9;  /* Lighter background for a fresher look */
+    color: #333;  /* Darker text for better readability */
+}
+
+h1, h2, h3 {
+    margin: 20px 0;  /* Increased spacing */
+    color: #35495e;  /* Subtle, professional color */
+}
+
+/* Form container styling */
+form {
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;  /* Responsive width */
+    margin: 20px auto;  /* Increased margin */
+    padding: 20px;
+    background-color: #ffffff;  /* White background */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Soft shadow for depth */
+    position: relative;  /* Added to make it a positioned ancestor */
+}
+
+.error-container {
+    background-color: #fbe4e6;  /* Softer red background */
+    border: 1px solid #f5c2c7;  /* Softer border color */
+    padding: 15px;
+    margin-bottom: 20px;
+    position: absolute;  /* Positioning relative to the nearest positioned ancestor */
+    top: 0;  /* Align to the top of the container */
+    left: 0;  /* Align to the left of the container */
+    width: 100%;  /* Take full width of the container */
+    z-index: 1000;  /* High z-index to ensure it's on top of other elements */
+}
+
+.error-container p {
+    color: #d9534f;  /* Less harsh red color */
+}
+
+/* User input and results container styling */
+.user-container, .results-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;  /* More pronounced rounded corners */
+    background-color: #fff;  /* White background for contrast */
+}
+
+/* Labels and input fields styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;  /* Darker color for better readability */
+}
+
+input[type="text"], input[type="number"] {
+    width: 50%;  /* Adjusted width to make input boxes shorter */
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin: 0 auto;  /* Center the input fields */
+    display: block;  /* Ensure inputs are block level to respect width */
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #5cb85c;  /* Slightly different green */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s;  /* Smooth transition for hover effect */
+}
+
+button[type="submit"]:hover {
+    background-color: #4cae4c;  /* Slightly darker green on hover */
+}
+
+/* Results container styling */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section span {
+    font-weight: bold;
+    color: #35495e;  /* Matching the headings color */
+}
+
+/* Plot and Prediction container styling */
+.plot-container, .prediction-container {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.prediction-text, .final-value-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
