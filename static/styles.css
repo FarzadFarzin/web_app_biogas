@@ -41,6 +41,24 @@ form {
     color: #d9534f;  /* Less harsh red color */
 }
 
+.warning-container {
+    background-color: #fbe4e6;  /* Softer red background */
+    border: 1px solid #f5c2c7;  /* Softer border color */
+    padding: 15px;
+    margin-bottom: 20px;
+    position: absolute;  /* Positioning relative to the nearest positioned ancestor */
+    top: 0;  /* Align to the top of the container */
+    left: 0;  /* Align to the left of the container */
+    width: 100%;  /* Take full width of the container */
+    z-index: 1000;  /* High z-index to ensure it's on top of other elements */
+}
+
+.warning-container p {
+    color: #d9534f;  /* Less harsh red color */
+}
+
+
+
 /* User input and results container styling */
 .user-container, .results-container {
     border: 1px solid #ccc;

@@ -7,20 +7,41 @@ from io import BytesIO
 import matplotlib.pyplot as plt
 import pandas as pd
 
+
 def load_model():
     model = joblib.load('Saved_files/best_model.pkl')
     df = pd.read_csv('Saved_files/Final_input.csv', parse_dates=True, index_col=0)
     X = df[['DS_PS_in(%)', 'VS_PS_in(%)', 'DS_WS_in(%)', 'VS_WS_in(%)', 'DS_Digester(%)', 'FA(mg/L)', 'Q_PS/Q_WS', 'Q_PS_in(m³/d)', 'Q_WS_in(m³/d)', 'Q_Total(m³/d)', 'Pre_DS_eff(%)', 'Pre_VS_eff(%)', 'ALK(mg CaCO3/L)', 'pH', 'T(°C)', 'Q_eff(m³/d)']]
+    
+    iso_forest = joblib.load('Saved_files/AD_Model.plk')
     A_model = joblib.load('Saved_files/A_model.pkl')
     B_model = joblib.load('Saved_files/B_model.pkl')
     best_model = joblib.load('Saved_files/best_model.pkl')
-    return A_model, B_model, best_model,X, df ,model
+    return A_model, B_model, best_model,X, df ,model,iso_forest
 
 
 
 
 def opt_func(user_values):
-    A_model, B_model, best_model, X, df ,model = load_model()
+    A_model, B_model, best_model, X, df ,model,iso_forest = load_model()
+    warning_message ={}
+    # Convert input_data to DataFrame if it's not already
+    if not isinstance(user_values, pd.DataFrame):
+        input_data = pd.DataFrame([user_values],columns=['DS_PS_in(%)', 'VS_PS_in(%)', 'DS_WS_in(%)', 'VS_WS_in(%)', 'DS_Digester(%)','FA(mg/L)', 'Q_PS/Q_WS', 'Q_PS_in(m³/d)', 'Q_WS_in(m³/d)', 'Q_Total(m³/d)' ])  # exclude 'anomaly' column
+        
+    # Check for anomalies
+    anomaly_prediction = iso_forest.predict(input_data)
+    print (anomaly_prediction)
+    if -1 in anomaly_prediction:
+        
+        # Identify which specific inputs are considered anomalous
+        anomalous_index = np.where(anomaly_prediction == -1)[0]
+        # Identify which specific inputs are considered anomalous
+        anomalous_features = input_data.iloc[anomalous_index].columns.tolist()
+        warning_message = f"Warning: Anomaly detected in input data for features. Prediction may not be accurate." #{anomalous_features}
+ 
+    
+    
     # Prepare User_Value as a 2D array
     user_value_array = np.array(list(user_values)).reshape(1, -1)
     # Predict with A_model
@@ -70,4 +91,4 @@ def opt_func(user_values):
     plot_url = base64.b64encode(img.getvalue()).decode('utf8')  # Encode as base64 for HTML embedding
     pred_DS_eff = float(pred_DS_eff)
     pred_VS_eff = float(pred_VS_eff)
-    return   pred_DS_eff, pred_VS_eff ,pos ,final_value,plot_url
+    return   pred_DS_eff, pred_VS_eff ,pos ,final_value,plot_url,warning_message

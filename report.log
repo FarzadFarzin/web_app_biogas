@@ -518,3 +518,156 @@
 2024-06-09 17:02:51,329 - werkzeug - INFO -  * Debugger PIN: 132-806-204
 2024-06-09 17:02:51,574 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2024 17:02:51] "GET / HTTP/1.1" 200 -
 2024-06-09 17:02:51,800 - werkzeug - INFO - 127.0.0.1 - - [09/Jun/2024 17:02:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-06-15 19:49:29,978 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-15 19:49:29,982 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-06-15 19:49:29,987 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 19:49:32,860 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 19:49:32,892 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 19:49:33,207 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:49:33] "GET / HTTP/1.1" 200 -
+2024-06-15 19:49:33,436 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:49:33] "GET /static/styles.css HTTP/1.1" 200 -
+2024-06-15 19:49:47,693 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:49:47] "POST / HTTP/1.1" 200 -
+2024-06-15 19:49:53,136 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:49:53] "GET / HTTP/1.1" 200 -
+2024-06-15 19:49:54,345 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:49:54] "POST / HTTP/1.1" 200 -
+2024-06-15 19:49:58,745 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:49:58] "GET / HTTP/1.1" 200 -
+2024-06-15 19:50:27,872 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-15 19:50:27,872 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-06-15 19:50:27,877 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 19:50:30,701 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 19:50:30,727 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 19:50:30,976 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:50:30] "GET / HTTP/1.1" 200 -
+2024-06-15 19:50:31,187 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:50:31] "GET /static/styles.css HTTP/1.1" 200 -
+2024-06-15 19:50:36,904 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:50:36] "POST / HTTP/1.1" 200 -
+2024-06-15 19:53:23,716 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-15 19:53:23,718 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-06-15 19:53:23,721 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 19:53:26,411 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 19:53:26,436 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 19:53:26,684 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:53:26] "GET / HTTP/1.1" 200 -
+2024-06-15 19:53:29,068 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 19:53:29] "POST / HTTP/1.1" 200 -
+2024-06-15 20:05:56,581 - werkzeug - INFO -  * Detected change in 'E:\\Web_app\\app_routes.py', reloading
+2024-06-15 20:05:56,823 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 20:05:59,444 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 20:05:59,471 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 20:05:59,734 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:05:59] "GET / HTTP/1.1" 200 -
+2024-06-15 20:06:01,452 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:06:01] "POST / HTTP/1.1" 200 -
+2024-06-15 20:06:03,021 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:06:03] "GET / HTTP/1.1" 200 -
+2024-06-15 20:06:41,082 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:06:41] "POST / HTTP/1.1" 200 -
+2024-06-15 20:06:42,568 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:06:42] "GET / HTTP/1.1" 200 -
+2024-06-15 20:06:43,685 - werkzeug - INFO -  * Detected change in 'E:\\Web_app\\app_routes.py', reloading
+2024-06-15 20:06:43,923 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 20:06:46,757 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 20:06:46,785 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 20:06:48,028 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:06:48] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-06-15 20:06:48,375 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:06:48] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-15 20:06:48,391 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:06:48] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-06-15 20:06:48,424 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:06:48] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-15 20:08:30,678 - werkzeug - INFO -  * Detected change in 'E:\\Web_app\\model_func.py', reloading
+2024-06-15 20:08:30,910 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 20:08:33,833 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 20:08:33,878 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 20:08:37,066 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:08:37] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-06-15 20:08:37,315 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:08:37] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-06-15 20:08:37,317 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:08:37] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-15 20:08:37,349 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:08:37] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-15 20:09:26,397 - werkzeug - INFO -  * Detected change in 'E:\\Web_app\\model_func.py', reloading
+2024-06-15 20:09:26,679 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 20:09:29,173 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 20:09:29,196 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 20:19:27,404 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-06-15 20:19:27,406 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-06-15 20:19:27,410 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 20:19:30,149 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 20:19:30,171 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 20:19:38,802 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:19:38] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-06-15 20:19:38,804 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:19:38] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-06-15 20:19:39,089 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:19:39] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-15 20:19:39,091 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:19:39] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-06-15 20:19:39,108 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:19:39] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-15 20:19:57,441 - werkzeug - INFO -  * Detected change in 'E:\\Web_app\\model_func.py', reloading
+2024-06-15 20:19:57,796 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 20:20:00,832 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 20:20:00,855 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 20:20:03,277 - pyswarms.single.global_best - INFO - Optimize for 500 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2024-06-15 20:20:05,978 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -48016.87890625, best pos: [4.00000000e+00 5.00000000e+00 6.00000000e+00 5.60000000e+01
+ 5.60000000e+01 5.65000000e+02 5.00000000e+00 6.50000000e+01
+ 6.50000000e+01 5.00000000e+00 2.99042678e+00 6.43355026e+01
+ 1.62266079e+04 7.23388340e+00 3.73485136e+01 1.29165721e+03]
+2024-06-15 20:20:07,619 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:20:07] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-06-15 20:20:07,886 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:20:07] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-15 20:20:07,887 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:20:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-06-15 20:20:07,918 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:20:07] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-15 20:20:17,168 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:20:17] "POST / HTTP/1.1" 200 -
+2024-06-15 20:20:17,256 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:20:17] "GET /static/styles.css HTTP/1.1" 200 -
+2024-06-15 20:20:29,777 - pyswarms.single.global_best - INFO - Optimize for 500 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2024-06-15 20:20:32,241 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -48016.87890625, best pos: [4.00000000e+00 5.00000000e+00 6.00000000e+00 5.60000000e+01
+ 5.60000000e+01 3.00000000e+00 5.00000000e+00 6.50000000e+01
+ 6.50000000e+01 5.00000000e+00 2.99042678e+00 6.43355026e+01
+ 1.61562724e+04 7.23181653e+00 3.73573855e+01 1.30408872e+03]
+2024-06-15 20:20:32,562 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:20:32] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-06-15 20:20:32,644 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:20:32] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-15 20:20:32,645 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:20:32] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-06-15 20:20:32,674 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:20:32] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-15 20:21:06,231 - werkzeug - INFO -  * Detected change in 'E:\\Web_app\\app_routes.py', reloading
+2024-06-15 20:21:07,913 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 20:21:10,434 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 20:21:10,456 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 20:21:12,196 - pyswarms.single.global_best - INFO - Optimize for 500 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2024-06-15 20:21:14,646 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -48016.87890625, best pos: [4.00000000e+00 5.00000000e+00 6.00000000e+00 5.60000000e+01
+ 5.60000000e+01 3.00000000e+00 5.00000000e+00 6.50000000e+01
+ 6.50000000e+01 5.00000000e+00 2.99042678e+00 6.43355026e+01
+ 1.62062148e+04 7.23114942e+00 3.73577562e+01 1.25165114e+03]
+2024-06-15 20:21:15,149 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:21:15] "POST / HTTP/1.1" 200 -
+2024-06-15 20:21:15,368 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:21:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-06-15 20:21:30,040 - werkzeug - INFO -  * Detected change in 'E:\\Web_app\\app_routes.py', reloading
+2024-06-15 20:21:31,438 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 20:21:33,925 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 20:21:33,948 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 20:21:35,468 - pyswarms.single.global_best - INFO - Optimize for 500 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2024-06-15 20:21:37,849 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -48016.87890625, best pos: [4.00000000e+00 5.00000000e+00 6.00000000e+00 5.60000000e+01
+ 5.60000000e+01 3.00000000e+00 5.00000000e+00 6.50000000e+01
+ 6.50000000e+01 5.00000000e+00 2.99042678e+00 6.43355026e+01
+ 1.61942091e+04 7.23136066e+00 3.73610863e+01 1.29397746e+03]
+2024-06-15 20:21:38,371 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:21:38] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-06-15 20:21:38,617 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:21:38] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-15 20:21:38,619 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:21:38] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-06-15 20:21:38,646 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:21:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-15 20:22:03,854 - werkzeug - INFO -  * Detected change in 'E:\\Web_app\\app_routes.py', reloading
+2024-06-15 20:22:05,269 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 20:22:07,731 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 20:22:07,753 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 20:22:07,988 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:22:07] "GET / HTTP/1.1" 200 -
+2024-06-15 20:22:08,198 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:22:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-06-15 20:22:15,365 - pyswarms.single.global_best - INFO - Optimize for 500 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2024-06-15 20:22:17,644 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -46664.85546875, best pos: [5.50000000e+01 5.00000000e+00 5.00000000e+00 5.00000000e+00
+ 5.00000000e+00 5.50000000e+01 5.00000000e+00 5.00000000e+00
+ 5.00000000e+00 5.00000000e+00 2.97223496e+00 6.48590317e+01
+ 1.62708249e+04 7.19733128e+00 3.73639487e+01 1.26465393e+03]
+2024-06-15 20:22:18,132 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:22:18] "POST / HTTP/1.1" 200 -
+2024-06-15 20:22:18,203 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:22:18] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-06-15 20:22:32,928 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:22:32] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-06-15 20:22:33,010 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:22:33] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-15 20:22:33,013 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:22:33] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-06-15 20:22:33,040 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:22:33] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-15 20:23:51,430 - werkzeug - INFO -  * Detected change in 'E:\\Web_app\\app_routes.py', reloading
+2024-06-15 20:23:52,847 - werkzeug - INFO -  * Restarting with stat
+2024-06-15 20:23:55,229 - werkzeug - WARNING -  * Debugger is active!
+2024-06-15 20:23:55,250 - werkzeug - INFO -  * Debugger PIN: 132-806-204
+2024-06-15 20:23:55,668 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:23:55] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2024-06-15 20:23:55,979 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:23:55] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-06-15 20:23:55,980 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:23:55] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-06-15 20:23:55,996 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:23:55] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-06-15 20:24:48,283 - pyswarms.single.global_best - INFO - Optimize for 500 iters with {'c1': 0.5, 'c2': 0.3, 'w': 0.9}
+2024-06-15 20:24:50,545 - pyswarms.single.global_best - INFO - Optimization finished | best cost: -46664.85546875, best pos: [5.50000000e+01 5.00000000e+00 5.00000000e+00 5.00000000e+00
+ 5.00000000e+00 5.50000000e+01 5.00000000e+00 5.00000000e+00
+ 5.00000000e+00 5.00000000e+00 2.97223496e+00 6.48590317e+01
+ 1.61483156e+04 7.19483810e+00 3.73590456e+01 1.26967293e+03]
+2024-06-15 20:24:51,066 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:24:51] "POST / HTTP/1.1" 200 -
+2024-06-15 20:24:51,140 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:24:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-06-15 20:24:52,252 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:24:52] "POST / HTTP/1.1" 200 -
+2024-06-15 20:24:52,356 - werkzeug - INFO - 127.0.0.1 - - [15/Jun/2024 20:24:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2024-06-15 20:24:57,924 - werkzeug - INFO -  * Detected change in 'E:\\Web_app\\app_routes.py', reloading
+2024-06-15 20:24:59,325 - werkzeug - INFO -  * Restarting with stat

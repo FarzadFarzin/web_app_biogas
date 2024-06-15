@@ -39,7 +39,7 @@ def configure_routes(app):
         global plot_url
         global final_value
         user_values_list = [float(value) for value in user_values.values()]
-        pred_DS_eff, pred_VS_eff, pos, final_value, plot_url = opt_func(user_values_list)
+        pred_DS_eff, pred_VS_eff, pos, final_value, plot_url ,warning_message= opt_func(user_values_list)
         
         # Store predictions in session
         # session['pred_DS_eff'] = pred_DS_eff
@@ -53,7 +53,7 @@ def configure_routes(app):
             'Q_eff_optimized': round(pos[15], 2)
         }
         return render_template('index.html', user_values=user_values, pred_DS_eff=pred_DS_eff,
-                               pred_VS_eff=pred_VS_eff, plot_url=plot_url, **optimized_values)
+                               pred_VS_eff=pred_VS_eff, plot_url=plot_url,warning_message=warning_message,  **optimized_values)
 
     def handle_prediction(user_values):
         # pred_DS_eff, pred_VS_eff, plot_url = get_latest_predictions()
@@ -67,7 +67,7 @@ def configure_routes(app):
         All_features = np.concatenate([list(user_values.values()), [pred_DS_eff], [pred_VS_eff], list(user2_values.values())]).astype(np.float32)
         
         All_features_array = np.array(All_features).reshape(1, -1)
-        _, _, _, _, _, model = load_model()
+        _, _, _, _, _, model,_ = load_model()
         prediction = model.predict(All_features_array)
         today = datetime.now().strftime("%B %d, %Y")
         return render_template('index.html', prediction=prediction[0], today=today, user_values=user_values,pred_DS_eff=pred_DS_eff, pred_VS_eff=pred_VS_eff, user2_values=user2_values, plot_url=plot_url,final_value=final_value)
